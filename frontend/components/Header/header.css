@@ -1,0 +1,23 @@
+header{
+  width:100%;
+  background:#fff;
+  padding:10px;
+}
+header .logo{
+  text-align:center;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  height:100%;
+}
+header .logo img{
+  width:200px;
+}
+@media screen and (max-width: 680px) {
+  header .logo{
+    justify-content:center;
+  }
+  header .logo img{
+    width:150px;
+  }
+}
