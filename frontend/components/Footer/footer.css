@@ -24,6 +24,8 @@ footer .footer-info .contact-description{
 footer .social-icons{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 footer .social-icons a{
   margin:0px 10px 0px 10px;

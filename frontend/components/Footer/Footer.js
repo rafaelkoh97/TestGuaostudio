@@ -1,6 +1,11 @@
 import './footer.css';
 import ContactInfo from '../ContactInfo/ContactInfo';
 
+const socialIcons = [
+  { icon: "facebook.svg", url: "" },
+  { icon: "instagram.svg",url: "" }
+];
+
 const Footer = () => {
   return(
     <>
@@ -24,7 +29,7 @@ const Footer = () => {
                 <p>info@boreal.com</p>
               </ContactInfo>
             </div>
-            <div className="col-md-4 col-sm-4 col-6 center">
+            <div className="col-md-4 col-sm-4 col-7 center">
               <ContactInfo title="ADDRESS">
                 <p>Av. López Mateos</p>
                 <p>WeWork Midtown</p>
@@ -33,10 +38,13 @@ const Footer = () => {
             </div>
             <div className="col-md-12 col-sm-12 col-12">
               <div className="social-icons">
-                <a href=""><img src="/icons/facebook.svg"/></a>
-                <a href=""><img src="/icons/instagram.svg"/></a>
-                <a href=""><img src="/icons/facebook.svg"/></a>
-                <a href=""><img src="/icons/instagram.svg"/></a>
+                {socialIcons.map((item,key) => {
+                   return (
+                     <a key={key} href={item.url}>
+                      <img src={"/icons/"+item.icon}/>
+                    </a>
+                   );
+                })}
               </div>
             </div> 
           </div>
