@@ -32,8 +32,11 @@ const Footer = () => {
               </ContactInfo>
             </div>
             <div className="col-md-12 col-sm-12 col-12">
-              <div>
-
+              <div className="social-icons">
+                <a href=""><img src="/icons/facebook.svg"/></a>
+                <a href=""><img src="/icons/instagram.svg"/></a>
+                <a href=""><img src="/icons/facebook.svg"/></a>
+                <a href=""><img src="/icons/instagram.svg"/></a>
               </div>
             </div> 
           </div>

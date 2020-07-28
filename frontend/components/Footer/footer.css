@@ -3,8 +3,12 @@ footer{
   min-height: 150px;
   margin-top: 100px;
   background-color: #171717;
-  padding: 10px 150px 10px 150px;
+  padding: 10px 150px 30px 150px;
   color: #fff;
+  background-image: url('/footerHouse.png');
+  background-repeat: no-repeat;
+  background-position: 90% 20px;
+  background-size: 400px;
 }
 footer .footer-info{
   text-align: center;
@@ -16,6 +20,20 @@ footer .footer-info .contact-us{
 }
 footer .footer-info .contact-description{
   font-size: 1em;
+}
+footer .social-icons{
+  display: flex;
+  justify-content: center;
+}
+footer .social-icons a{
+  margin:0px 10px 0px 10px;
+}
+footer .social-icons a img{
+  width: 25px;
+}
+footer .social-icons a:hover{
+  width: 25px;
+  transform: scale(1.2);
 }
 @media screen and (max-width: 680px) {
   footer{ 
