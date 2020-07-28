@@ -1,0 +1,16 @@
+.contact-info .contact-info-title{
+  width: fit-content;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-info .contact-info-title::after{
+  content: ''; 
+  position: absolute;
+  left: 0px;
+  bottom:-10px;
+  width: 25px;
+  height: 1.5px;
+  background: #F8E71D;
+}

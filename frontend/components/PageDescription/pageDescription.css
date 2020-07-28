@@ -4,18 +4,20 @@
   width: 100%;
   position: relative;
   margin-bottom: 50px;
+  z-index: 1;
+  color: #fff;
+  padding-bottom: 30px;
 }
 .page-description:after {
+  content: '';
   position: absolute;
-  top: 100%;
+  bottom: -70px;
   left: 0;
-  content: "";
-  height: 0;
-  width: 0;
-  border-right: 100vw solid #171717;
-  border-bottom: 5vw solid transparent;
-  border-top: 0px solid transparent;
-  overflow: hidden;
+  width: 100%;
+  height: calc(100% + 50px);
+  clip-path: polygon(0% 0%, 100% 60px, 100% 100%, 0% calc(100% - 60px));
+  background:#171717;
+  z-index: -1;
 }
 .description-title{
   margin-top: 5px;
