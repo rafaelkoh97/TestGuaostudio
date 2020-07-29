@@ -1,14 +1,15 @@
 import Link from './../Link';
 import './nav.css';
 
-const menuItems = [
-  {  path: "/", name: "What we do"},
-  {  path: "", name: "Who we are"},
-  {  path: "", name: "Contact Us"},
-  {  path: "", name: "Hire Us", custom: true},
-];
-
 const Nav = () => {
+
+  const menuItems = [
+    {  path: "/", name: "What we do"},
+    {  path: "", name: "Who we are"},
+    {  path: "", name: "Contact Us"},
+    {  path: "", name: "Hire Us", custom: true},
+  ];
+  
   return(
     <nav>
       <ul>

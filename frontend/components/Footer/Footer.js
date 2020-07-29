@@ -1,12 +1,13 @@
 import './footer.css';
 import ContactInfo from '../ContactInfo/ContactInfo';
 
-const socialIcons = [
-  { icon: "facebook.svg", url: "" },
-  { icon: "instagram.svg",url: "" }
-];
-
 const Footer = () => {
+
+  const socialIcons = [
+    { icon: "facebook.svg", url: "" },
+    { icon: "instagram.svg",url: "" }
+  ];
+  
   return(
     <>
       <footer>

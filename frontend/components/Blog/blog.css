@@ -1,0 +1,16 @@
+.blog-tags{ 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.blog-tags ul{
+  display: flex;
+  margin-right: 25px;
+}
+.blog-tags ul li{
+  list-style:none;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+}

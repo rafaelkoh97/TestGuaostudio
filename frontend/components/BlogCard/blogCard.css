@@ -1,0 +1,11 @@
+.blog-card{
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 680px) {
+  .blog-card{
+    margin-top: 25px;
+  }
+}
