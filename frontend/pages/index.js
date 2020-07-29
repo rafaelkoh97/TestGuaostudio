@@ -1,9 +1,14 @@
+import Banner from './../components/Banner/Banner';
 import PageDescription from './../components/PageDescription/PageDescription';
 
 const Home = () => {
   return(
     <>
-       <PageDescription 
+      <Banner
+        mainImage={"mainSlider.jpg"}
+        secondaryImages={["virtualReality.jpg","realState.jpg"]}
+      />
+      <PageDescription 
         title="3D RENDERING" 
         titleIcon="https://cdn2.iconfinder.com/data/icons/viiva-content-editor/32/3D-512.png"
         button={{name:"Hire Us", path:"/"}}>

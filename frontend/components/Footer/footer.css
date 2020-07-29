@@ -10,6 +10,10 @@ footer{
   background-position: 90% 20px;
   background-size: 400px;
 }
+footer > div{
+  max-width: 1800px;
+  margin: 0 auto;
+}
 footer .footer-info{
   text-align: center;
   margin-bottom: 40px;

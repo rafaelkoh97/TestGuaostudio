@@ -3,6 +3,10 @@ header{
   background:#fff;
   padding:10px;
 }
+header > div{
+  max-width: 1800px;
+  margin: 0 auto;
+}
 header .logo{
   text-align:center;
   display:flex;

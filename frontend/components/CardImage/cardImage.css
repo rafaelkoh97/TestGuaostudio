@@ -1,0 +1,15 @@
+.images-item{
+  position: relative;
+  width:fit-content;
+}
+.images-item img{
+  max-width: 100%;
+}
+.images-item:hover > .images-item-background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(248, 231, 29,0.5);
+}

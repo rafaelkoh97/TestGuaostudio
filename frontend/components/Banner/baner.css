@@ -1,0 +1,27 @@
+.banner-container{
+  position: relative;
+  margin-bottom: -3px;
+  height: fit-content;
+}
+.banner-container img{
+  max-width: 100%;
+}
+.banner-container .banner-secondary-container{
+  width: 25%;
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  min-width: 117px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.banner-container .banner-secondary-container .banner-image-item{
+  margin-top: -4px;
+  height: 50%;
+  max-width: 325px;
+}
+.banner-container .banner-secondary-container .banner-image-item img{
+  width: 325px;
+}
