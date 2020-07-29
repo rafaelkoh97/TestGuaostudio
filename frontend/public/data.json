@@ -1,0 +1,38 @@
+{
+  "data":[
+    {
+      "id": 1,
+      "title": "Mediterranean Home",
+      "location": "Cabo San Lucas, México",
+      "software": "3D Max, Vray",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ipsum mauris, et egestas justo pretium et. In tristique quam fringilla quam auctor, eu suscipit leo tincidunt. Fusce pellentesque elit quis nunc congue, at molestie risus luctus. Nam dapibus ex vitae orci cursus sagittis. Cras massa dui, aliquet quis blandit non, ullamcorper ac odio. Donec quis aliquet lacus, eget porttitor sem. Integer tincidunt cursus neque, ut tincidunt urna. In hac habitasse platea dictumst. Curabitur a blandit tellus. Donec sit amet rutrum lorem. Maecenas suscipit sodales dignissim. Curabitur egestas faucibus ante, nec consequat eros pulvinar non. Interdum et malesuada fames ac ante ipsum primis in faucibus In hac habitasse platea dictumst. Aliquam dapibus dui tellus, ac semper lorem ullamcorper ut. Nulla facilisi. Praesent a tincidunt est. Praesent tempor id dui nec suscipit. Donec vel enim tortor. Nulla sed mi in felis lacinia rutrum nec vitae enim. Nullam efficitur nibh leo, sed dignissim arcu convallis at. Suspendisse suscipit ut nulla in viverra. Aliquam quis turpis tellus. Donec eros ligula, dictum sed velit at, accumsan lacinia ligula. Ut aliquet magna a ligula aliquet vehicula. Sed vehicula imperdiet erat, eget fermentum massa feugiat ut. Ut eros dolor, ornare ac arcu ut, fringilla semper nisi. Aenean viverra magna tincidunt pulvinar viverra. Praesent lobortis ex quis imperdiet elementum. Sed non metus eu quam auctor luctus nec sed urna. Etiam egestas quam porttitor est ornare auctor eget et risus. Morbi iaculis quam a enim scelerisque, a hendrerit nisi faucibus. Donec est nibh, lacinia sodales dolor finibus, faucibus rhoncus risus. Suspendisse potenti.",
+      "gallery": [
+        {
+          "id": 1,
+          "image": "/img/house.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/img/casaPrefabricada.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Countryside Home",
+      "location": "Cancún, México",
+      "software": "AutoCad, Vray",
+      "description":"Viverra aliquet eget sit amet tellus. Facilisis gravida neque convallis a cras semper auctor. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Sed vulputate odio ut enim blandit volutpat maecenas. Curabitur vitae nunc sed velit. Natoque penatibus et magnis dis. Proin nibh nisl condimentum id venenatis. In est ante in nibh. Nam at lectus urna duis. Nibh praesent tristique magna sit amet purus gravida quis. Sem et tortor consequat id porta nibh venenatis cras. At quis risus sed vulputate. Nullam vehicula ipsum a arcu cursus. In hac habitasse platea dictumst quisque. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. Scelerisque varius morbi enim nunc faucibus a pellentesque sit.",
+      "gallery": [
+        {
+          "id": 3,
+          "image": "/img/casaPrefabricada.jpg"
+        },
+        {
+          "id": 4,
+          "image": "/img/house.jpg"
+        }
+      ]
+    }
+  ]
+}

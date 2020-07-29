@@ -42,7 +42,7 @@ const Footer = () => {
                 {socialIcons.map((item,key) => {
                    return (
                      <a key={key} href={item.url}>
-                      <img src={"/icons/"+item.icon} alt="Social Icon" title="Social Icon"/>
+                      <img src={`/icons/${item.icon}`} alt="Social Icon" title="Social Icon"/>
                     </a>
                    );
                 })}

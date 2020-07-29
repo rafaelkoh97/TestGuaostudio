@@ -1,7 +1,7 @@
 import './blog.css';
 import BlogCard from '../BlogCard/BlogCard';
 
-const Blog = () => {
+const Blog = ({blogData}) => {
   return(
     <>
       <div className="container-info">
@@ -13,11 +13,16 @@ const Blog = () => {
             <li>Product Design</li>
           </ul>
         </div>
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogData.map((item,key) => {
+          return  <BlogCard 
+            key={key}
+            id={item.id}
+            images={item.gallery}
+            title={item.title}
+            location={item.location}
+            software={item.software}
+          />
+        })}
       </div>
     </>
   );

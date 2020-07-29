@@ -7,6 +7,7 @@ html,body{
 }
 a{
   text-decoration: none;
+  color:#000;
 }
 .container-info{
   padding-left: 80px;
@@ -41,6 +42,9 @@ a{
 }
 .btn-medium{
   min-width: 180px;
+}
+.bold{
+  font-weight: bold;
 }
 @media screen and (max-width: 680px) {
   html,body{
