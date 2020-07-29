@@ -12,7 +12,7 @@ const PageDescription = ({title,titleIcon,goBack,button,children}) => {
             </a>
           </Link>}
         <div className="description-title">
-          {titleIcon && <img src={titleIcon}/>}
+          {titleIcon && <img src={titleIcon} title="Description Icon" alt="Description Icon"/>}
           <h1>{title}</h1>
         </div>
         <div className="description-info">
