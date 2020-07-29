@@ -14,7 +14,7 @@ const Nav = () => {
       <ul>
         {menuItems.map((item,key) => {
           return(
-            <li key={key} className={item.custom ? 'custom-item-menu' : ''}>
+            <li key={key} className={item.custom ? 'btn btn-small custom-item-menu' : ''}>
               <Link href={item.path}><a>{item.name}</a></Link>
             </li>
           );
@@ -22,6 +22,6 @@ const Nav = () => {
       </ul>
     </nav>
   );
-};
+}
 
 export default Nav;

@@ -14,32 +14,35 @@
   bottom: -70px;
   left: 0;
   width: 100%;
-  height: calc(100% + 50px);
-  clip-path: polygon(0% 0%, 100% 60px, 100% 100%, 0% calc(100% - 60px));
+  height: calc(100% + 10px);
+  clip-path: polygon(0% 0%, 100% 80px, 100% 100%, 0% calc(100% - 70px));
   background:#171717;
   z-index: -1;
 }
-.description-title{
+.page-description .container-info .description-title{
   margin-top: 5px;
   display: flex;
   align-items: center;
 }
-.description-title h1{
+.page-description .container-info .description-title h1{
   color: #f8e71d;
   font-size: 1.7em;
   font-weight: bold;
 }
-.description-title img{
+.page-description .container-info .description-title img{
   width: 51.2px;
   height: 51.2px;
   margin-right: 20px;
 }
-.back-button{
+.page-description .container-info .back-button{
   color: #fff;
   font-size: 1em;
   cursor: pointer;
 }
-.back-button .arrow {
+.page-description .container-info .back-button:hover > .arrow{
+  border-color: #fff;
+}
+.page-description .container-info .back-button .arrow {
   border: solid #f8e71d;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -47,11 +50,18 @@
   position: relative;
   margin-right: 10px;
 }
-.back-button .rightArrow {
+.page-description .container-info .back-button .rightArrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-.back-button .leftArrow {
+.page-description .container-info .back-button .leftArrow {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+.page-description .container-info .description-button{
+  position: absolute;
+  right: 6%;
+  bottom: -20px;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }

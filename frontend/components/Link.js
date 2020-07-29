@@ -12,4 +12,5 @@ const customLink = ({href,children}) => {
   
   return <Link href={href}>{React.cloneElement(children, { className })}</Link>
 }
+
 export default customLink;

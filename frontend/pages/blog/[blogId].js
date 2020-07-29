@@ -7,11 +7,10 @@ const BlogItem = ({blogId}) => {
       <Head>
         <title>Blog</title>
       </Head>
-      <PageDescription 
-        title="Blog title" 
+      <PageDescription
+        title="Blog title"
         titleIcon="https://cdn2.iconfinder.com/data/icons/viiva-content-editor/32/3D-512.png"
-        goBack={true}
-      >
+        goBack={true}>
       </PageDescription>
       <div className="container-info blogInfo">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ipsum mauris, et egestas justo pretium et. In tristique quam fringilla quam auctor, eu suscipit leo tincidunt. Fusce pellentesque elit quis nunc congue, at molestie risus luctus. Nam dapibus ex vitae orci cursus sagittis. Cras massa dui, aliquet quis blandit non, ullamcorper ac odio. Donec quis aliquet lacus, eget porttitor sem. Integer tincidunt cursus neque, ut tincidunt urna. In hac habitasse platea dictumst. Curabitur a blandit tellus. Donec sit amet rutrum lorem. Maecenas suscipit sodales dignissim. Curabitur egestas faucibus ante, nec consequat eros pulvinar non. Interdum et malesuada fames ac ante ipsum primis in faucibus</p>
@@ -27,6 +26,6 @@ BlogItem.getInitialProps = ({query:{blogId}}) => {
   return {
     blogId
   };
-};
+}
 
 export default BlogItem;

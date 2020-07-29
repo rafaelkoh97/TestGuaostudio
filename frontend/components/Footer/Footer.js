@@ -33,7 +33,7 @@ const Footer = () => {
               <ContactInfo title="ADDRESS">
                 <p>Av. López Mateos</p>
                 <p>WeWork Midtown</p>
-                <p>Gualajara Jal. México</p>
+                <p>Guadalajara Jal. México</p>
               </ContactInfo>
             </div>
             <div className="col-md-12 col-sm-12 col-12">

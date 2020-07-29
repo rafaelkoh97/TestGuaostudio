@@ -26,17 +26,10 @@ nav ul li .selected{
   font-weight:bold;
 }
 nav ul .custom-item-menu{
-  background-color:#f8e71d;
-  border-radius:5px;
-  padding-top:5px;
-  padding-bottom:5px;
-  margin-top:-5px;
-  font-weight:bold;
-  min-width:100px;
-  transition: 0.2s;
+  margin-top:-10px;
 }
 nav ul .custom-item-menu:hover{
-  transform:scale(1.05);
+  border-bottom: 0px solid red;
 }
 @media screen and (max-width: 680px) {
   nav{
