@@ -1,13 +1,14 @@
-import './contactInfo.css';
+import "./contactInfo.css";
+import Container from "./../Container";
 
-const ContactInfo = ({title,children}) => {
-    return(
-      <>
-        <div className="contact-info">
-          <p className="contact-info-title">{title}</p>
-          {children}
-        </div>
-      </>
-    );
-}
+const ContactInfo = ({ title, children }) => {
+  return (
+    <Container>
+      <div className="contact-info">
+        <p className="contact-info-title">{title}</p>
+        {children}
+      </div>
+    </Container>
+  );
+};
 export default ContactInfo;

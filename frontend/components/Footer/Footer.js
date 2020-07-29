@@ -1,24 +1,30 @@
-import './footer.css';
-import ContactInfo from '../ContactInfo/ContactInfo';
+import "./footer.css";
+import Container from "./../Container";
+import ContactInfo from "../ContactInfo/ContactInfo";
 
 const Footer = () => {
-
   const socialIcons = [
     { icon: "facebook.svg", url: "" },
-    { icon: "instagram.svg",url: "" }
+    { icon: "instagram.svg", url: "" },
   ];
-  
-  return(
-    <>
+
+  return (
+    <Container>
       <footer>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 col-sm-12 col-12">
               <div className="footer-info">
                 <p className="contact-us">CONTACT US</p>
-                <p className="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non pellentesque massa, laoreet placerat arcu. Etiam congue, dui non vestibulum facilisis, nunc eros mollis est, sed euismod nisi massa non sem. Aliquam fermentum orci ut nibh vulputate luctus.</p>
+                <p className="contact-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent non pellentesque massa, laoreet placerat arcu. Etiam
+                  congue, dui non vestibulum facilisis, nunc eros mollis est,
+                  sed euismod nisi massa non sem. Aliquam fermentum orci ut nibh
+                  vulputate luctus.
+                </p>
               </div>
-            </div>  
+            </div>
             <div className="col-md-4 col-sm-4 col-6 center">
               <ContactInfo title="PHONE">
                 <p>(33) 3647 8763</p>
@@ -39,20 +45,24 @@ const Footer = () => {
             </div>
             <div className="col-md-12 col-sm-12 col-12">
               <div className="social-icons">
-                {socialIcons.map((item,key) => {
-                   return (
-                     <a key={key} href={item.url}>
-                      <img src={`/icons/${item.icon}`} alt="Social Icon" title="Social Icon"/>
+                {socialIcons.map((item, key) => {
+                  return (
+                    <a key={key} href={item.url}>
+                      <img
+                        src={`/icons/${item.icon}`}
+                        alt="Social Icon"
+                        title="Social Icon"
+                      />
                     </a>
-                   );
+                  );
                 })}
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </footer>
-    </>
+    </Container>
   );
-}
+};
 
 export default Footer;
