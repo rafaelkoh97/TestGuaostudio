@@ -5,7 +5,7 @@ const CardImage = ({image}) => {
     <>
       <div className="images-item">
         <div className="images-item-background" />
-        <img src={"/img/banner/"+image} />
+        <img src={image} />
       </div>
     </>
   );
