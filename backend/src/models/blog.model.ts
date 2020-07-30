@@ -1,4 +1,5 @@
-import { Entity, model, property } from '@loopback/repository';
+import { Entity, model, property, belongsTo} from '@loopback/repository';
+import {BlogTag} from './blog-tag.model';
 
 @model()
 export class Blog extends Entity {
@@ -26,10 +27,8 @@ export class Blog extends Entity {
   })
   body: string;
 
-  @property({
-    type: 'string',
-  })
-  blogTagId?: string;
+  @belongsTo(() => BlogTag)
+  blogTagId: string;
 
   constructor(data?: Partial<Blog>) {
     super(data);
