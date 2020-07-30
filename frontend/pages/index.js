@@ -1,29 +1,35 @@
-import Container from "./../components/Container";
-import Banner from "./../components/Banner/Banner";
-import PageDescription from "./../components/PageDescription/PageDescription";
-import Blog from "../components/Blog/Blog";
-import { API_URL } from "./../constants";
+import Container from '../components/Container';
+import Banner from '../components/Banner/Banner';
+import PageDescription from '../components/PageDescription/PageDescription';
+import Blog from '../components/Blog/Blog';
+import { API_URL } from '../constants';
 
 const Home = ({ blog }) => {
-  const bannerMainImage = "/img/banner/mainSlider.jpg";
+  const bannerMainImage = '/img/banner/mainSlider.jpg';
 
-  const BannerSecondaryImages = [
-    "/img/banner/virtualReality.jpg",
-    "/img/banner/realState.jpg",
+  const bannerSecondaryImages = [
+    {
+      id: 0,
+      image: '/img/banner/virtualReality.jpg',
+    },
+    {
+      id: 1,
+      image: '/img/banner/realState.jpg',
+    },
   ];
 
   const pageInfo = {
-    title: "3D RENDERING",
+    title: '3D RENDERING',
     titleIcon:
-      "https://cdn2.iconfinder.com/data/icons/viiva-content-editor/32/3D-512.png",
-    button: { name: "Hire Us", path: "/" },
+      'https://cdn2.iconfinder.com/data/icons/viiva-content-editor/32/3D-512.png',
+    button: { name: 'Hire Us', path: '/' },
   };
 
   return (
     <Container>
       <Banner
         mainImage={bannerMainImage}
-        secondaryImages={BannerSecondaryImages}
+        secondaryImages={bannerSecondaryImages}
       />
 
       <PageDescription {...pageInfo}>
@@ -50,9 +56,7 @@ const Home = ({ blog }) => {
 };
 
 Home.getInitialProps = async () => {
-  const { data } = await fetch(`${API_URL}/data.json`).then((res) =>
-    res.json()
-  );
+  const { data } = await fetch(`${API_URL}/data.json`).then((res) => res.json());
 
   return {
     blog: data,

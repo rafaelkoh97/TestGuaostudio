@@ -1,11 +1,11 @@
-import "./footer.css";
-import Container from "./../Container";
-import ContactInfo from "../ContactInfo/ContactInfo";
+import './footer.css';
+import Container from '../Container';
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 const Footer = () => {
   const socialIcons = [
-    { icon: "facebook.svg", url: "" },
-    { icon: "instagram.svg", url: "" },
+    { icon: 'facebook.svg', url: '' },
+    { icon: 'instagram.svg', url: '' },
   ];
 
   return (
@@ -45,17 +45,15 @@ const Footer = () => {
             </div>
             <div className="col-md-12 col-sm-12 col-12">
               <div className="social-icons">
-                {socialIcons.map((item, key) => {
-                  return (
-                    <a key={key} href={item.url}>
-                      <img
-                        src={`/icons/${item.icon}`}
-                        alt="Social Icon"
-                        title="Social Icon"
-                      />
-                    </a>
-                  );
-                })}
+                {socialIcons.map((item, key) => (
+                  <a key={key} href={item.url}>
+                    <img
+                      src={`/icons/${item.icon}`}
+                      alt="Social Icon"
+                      title="Social Icon"
+                    />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
