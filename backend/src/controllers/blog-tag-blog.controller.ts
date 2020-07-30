@@ -19,8 +19,10 @@ import {
   BlogTag,
   Blog,
 } from '../models';
-import {BlogTagRepository} from '../repositories';
+import { BlogTagRepository } from '../repositories';
+import { authenticate } from '@loopback/authentication';
 
+@authenticate('jwt')
 export class BlogTagBlogController {
   constructor(
     @repository(BlogTagRepository) protected blogTagRepository: BlogTagRepository,
@@ -32,7 +34,7 @@ export class BlogTagBlogController {
         description: 'Array of BlogTag has many Blog',
         content: {
           'application/json': {
-            schema: {type: 'array', items: getModelSchemaRef(Blog)},
+            schema: { type: 'array', items: getModelSchemaRef(Blog) },
           },
         },
       },
@@ -49,7 +51,7 @@ export class BlogTagBlogController {
     responses: {
       '200': {
         description: 'BlogTag model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Blog)}},
+        content: { 'application/json': { schema: getModelSchemaRef(Blog) } },
       },
     },
   })
@@ -74,7 +76,7 @@ export class BlogTagBlogController {
     responses: {
       '200': {
         description: 'BlogTag.Blog PATCH success count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -83,7 +85,7 @@ export class BlogTagBlogController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Blog, {partial: true}),
+          schema: getModelSchemaRef(Blog, { partial: true }),
         },
       },
     })
@@ -97,7 +99,7 @@ export class BlogTagBlogController {
     responses: {
       '200': {
         description: 'BlogTag.Blog DELETE success count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })

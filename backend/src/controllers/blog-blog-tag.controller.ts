@@ -10,8 +10,10 @@ import {
   Blog,
   BlogTag,
 } from '../models';
-import {BlogRepository} from '../repositories';
+import { BlogRepository } from '../repositories';
+import { authenticate } from '@loopback/authentication';
 
+@authenticate('jwt')
 export class BlogBlogTagController {
   constructor(
     @repository(BlogRepository)
@@ -24,7 +26,7 @@ export class BlogBlogTagController {
         description: 'BlogTag belonging to Blog',
         content: {
           'application/json': {
-            schema: {type: 'array', items: getModelSchemaRef(BlogTag)},
+            schema: { type: 'array', items: getModelSchemaRef(BlogTag) },
           },
         },
       },

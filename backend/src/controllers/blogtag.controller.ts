@@ -18,6 +18,9 @@ import {
 } from '@loopback/rest';
 import { BlogTag } from '../models';
 import { BlogTagRepository } from '../repositories';
+import { authenticate } from '@loopback/authentication';
+
+@authenticate('jwt')
 
 export class BlogtagController {
   constructor(

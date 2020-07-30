@@ -16,20 +16,22 @@ import {
   del,
   requestBody,
 } from '@loopback/rest';
-import {Blog} from '../models';
-import {BlogRepository} from '../repositories';
+import { Blog } from '../models';
+import { BlogRepository } from '../repositories';
+import { authenticate } from '@loopback/authentication';
 
+@authenticate('jwt')
 export class BlogController {
   constructor(
     @repository(BlogRepository)
-    public blogRepository : BlogRepository,
-  ) {}
+    public blogRepository: BlogRepository,
+  ) { }
 
   @post('/blogs', {
     responses: {
       '200': {
         description: 'Blog model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Blog)}},
+        content: { 'application/json': { schema: getModelSchemaRef(Blog) } },
       },
     },
   })
@@ -53,7 +55,7 @@ export class BlogController {
     responses: {
       '200': {
         description: 'Blog model count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -71,7 +73,7 @@ export class BlogController {
           'application/json': {
             schema: {
               type: 'array',
-              items: getModelSchemaRef(Blog, {includeRelations: true}),
+              items: getModelSchemaRef(Blog, { includeRelations: true }),
             },
           },
         },
@@ -88,7 +90,7 @@ export class BlogController {
     responses: {
       '200': {
         description: 'Blog PATCH success count',
-        content: {'application/json': {schema: CountSchema}},
+        content: { 'application/json': { schema: CountSchema } },
       },
     },
   })
@@ -96,7 +98,7 @@ export class BlogController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Blog, {partial: true}),
+          schema: getModelSchemaRef(Blog, { partial: true }),
         },
       },
     })
@@ -112,7 +114,7 @@ export class BlogController {
         description: 'Blog model instance',
         content: {
           'application/json': {
-            schema: getModelSchemaRef(Blog, {includeRelations: true}),
+            schema: getModelSchemaRef(Blog, { includeRelations: true }),
           },
         },
       },
@@ -120,7 +122,7 @@ export class BlogController {
   })
   async findById(
     @param.path.string('id') id: string,
-    @param.filter(Blog, {exclude: 'where'}) filter?: FilterExcludingWhere<Blog>
+    @param.filter(Blog, { exclude: 'where' }) filter?: FilterExcludingWhere<Blog>
   ): Promise<Blog> {
     return this.blogRepository.findById(id, filter);
   }
@@ -137,7 +139,7 @@ export class BlogController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Blog, {partial: true}),
+          schema: getModelSchemaRef(Blog, { partial: true }),
         },
       },
     })
